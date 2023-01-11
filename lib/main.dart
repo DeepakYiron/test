@@ -106,7 +106,7 @@ class HomeState extends State<Home> {
     }).onError((error, stackTrace) async {
       await Geolocator.requestPermission();
       if (kDebugMode) {
-        print("ERROR$error");
+
       }
     });
     return await Geolocator.getCurrentPosition();
